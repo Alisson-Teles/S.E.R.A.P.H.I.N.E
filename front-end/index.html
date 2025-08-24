@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SERAPHINE</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="./src/js/script.js"></script>
+</head>
+<body class="w-screen h-screen flex">
+
+  <!--leftSquare-->
+  <div class="w-[18%] h-screen bg-gray-200 flex-col">
+    <p class="text-xl mx-auto w-1/2 mt-5 text-center">SERAPHINE</p>
+    <img src="./src/icon/bipolar.png "  class="w-[100px] h-[100px] mx-auto w-1/2 mt-6">
+  </div>
+
+  <!--rightSquare-->
+  <div class="w-screen h-screen bg-white-200">
+    <p class="text-center text-3xl mt-[24%]">Quer ajuda com os estudos?</p>
+    <div class="w-[30%] h-[20%] bg-white-200 mx-auto w-1/2 mt-[13%] border border-black rounded-3xl flex items-center justify-center">
+      <div class=" w-[40%] h-[100px] flex items-center justify-center w-[100%] h-[100%] mx-auto w-1/2 ">
+        <form action="/upload" method="post" enctype="multipart/form-data" class="bg-white-200 w-[50%] h-[100%] flex items-center justify-center flex-col">
+        <p class="text-[80%]">Clique ou arraste um PDF!</p>
+        <input onchange="DesappearInput()" type="file" name="file" class="text-center ml-[10%] w-[auto] h-[auto] flex items-center justify-center mt-4" id="input-file">
+        <button class=" text-xl  hidden mt-4 bg-white-200 px-4 py-2 rounded-led w-[80%] border border-black rounded-2xl flex items-center justify-center" id="sendButton">Enviar <img class="ml-3 w-[40px] h-[40px]" src="./src/icon/upload-de-arquivo.png" alt=""></button>
+      </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
