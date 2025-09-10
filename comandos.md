@@ -17,7 +17,7 @@
 
 * python manage.py migrate ## realiza tudo que foi organizado em makemigrations
 
-*python manage.py createsuperuser ##Vai criar seu usuário no banco de dados
+* python manage.py createsuperuser ##Vai criar seu usuário no banco de dados
 
 
 
